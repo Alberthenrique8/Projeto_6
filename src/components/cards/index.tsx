@@ -8,54 +8,61 @@ import {
   TituloNota,
   ImageWrapper,
   TagContainer,
-  Tag
-} from './styles'
+  Tag,
+  GridContainer,
 
-import sushi from '../../imagens/sushi.png'
-import massa from '../../imagens/massa.png'
+} from './styles'
 import Button from '../button'
 
-const Sushis = () => (
-  <Card>
+ type Cardapio = {
+    cardapio: any;
+    foto: string;
+    preco?: number;
+    id: number;
+    nome: string;
+    destacado: string;
+    porcao: string;
+    descricao: string;
+    restauranteDescricao?: string;
+}
+
+type Restaurante =  {
+    rotas: string | undefined;
+    id:number;
+    titulo:string
+    tipo:string;
+    avaliacao:number;
+    descricao:string;
+    capa:string;
+};
+
+
+
+type Props = {
+  restaurante:Restaurante
+}
+
+const ExportRestaurante = ({restaurante}: Props) => (
+    <GridContainer>
+      <Card>
     <ImageWrapper>
-      <Imagem src={sushi} alt="Sushi" />
+      <Imagem src={restaurante.capa} alt="" />
       <TagContainer>
-        <Tag>Destaque da semana</Tag>
-        <Tag>Japonesa</Tag>
+        <Tag>{restaurante.tipo}</Tag>
       </TagContainer>
     </ImageWrapper>
     <Conteudo>
       <TituloNota>
-        <Titulo>Hioki Sushi</Titulo>
-        <Nota>4.9</Nota>
+        <Titulo>{restaurante.titulo}</Titulo>
+        <Nota>{restaurante.avaliacao.toFixed(1)}</Nota>
       </TituloNota>
       <Descricao>
-        Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente o Japão sem sair do lar com nosso delivery!
+        {restaurante.descricao}
       </Descricao>
-      <Button type="link" title="Saiba mais">Saiba Mais</Button>
+      <Button type="link" to={`/restaurante/${restaurante.id}`} title="Saiba mais">Saiba Mais</Button>
     </Conteudo>
   </Card>
-)
+  </GridContainer>
 
-const Massas = () => (
-  <Card>
-    <ImageWrapper>
-      <Imagem src={massa} alt="Massa" />
-      <TagContainer>
-        <Tag>Italiana</Tag>
-      </TagContainer>
-    </ImageWrapper>
-    <Conteudo>
-      <TituloNota>
-        <Titulo>La Dolce Vita Trattoria</Titulo>
-        <Nota>4.6</Nota>
-      </TituloNota>
-      <Descricao>
-        A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!
-      </Descricao>
-      <Button type="link" to="/Teste" title="Saiba mais">Saiba Mais</Button>
-    </Conteudo>
-  </Card>
 )
-
-export { Sushis, Massas }
+export { ExportRestaurante, type Restaurante };

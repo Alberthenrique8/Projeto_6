@@ -9,9 +9,9 @@ type Props = {
   children: string
 }
 
+
 const Button = ({ type, title, to, onClick, children }: Props) => {
   const navigate = useNavigate()
-
   const handleClick = () => {
     if (onClick) {
       onClick()

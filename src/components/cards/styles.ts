@@ -9,21 +9,20 @@ export const Card = styled.li`
   font-family: 'Inter', Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 120px;
-`
+ `
 
 export const ImageWrapper = styled.div`
   position: relative;
-
 `
 
 export const TagContainer = styled.div`
   position: absolute;
-  top: 8px;
+  top: 18px;
   right: 8px;
   display: flex;
-  gap: 4px;
+  gap: 8px;
 `
 
 export const Tag = styled.span`
@@ -31,12 +30,13 @@ export const Tag = styled.span`
   color: #fff;
   padding: 4px 6px;
   font-size: 12px;
-  border-radius: 4px;
+  border-radius: none;
 `
 export const Imagem = styled.img`
   width: 100%;
   height: 200px;
   object-fit: cover;
+  
 `
 
 export const Conteudo = styled.div`
@@ -58,6 +58,8 @@ export const Titulo = styled.h3`
   font-size: 18px;
   color: #E66767;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
 `
 
 export const Nota = styled.span`
@@ -73,10 +75,12 @@ export const Nota = styled.span`
 `
 
 export const Descricao = styled.p`
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 14px;
   color: #E66767;
   line-height: 22px;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: regular;
 `;
 

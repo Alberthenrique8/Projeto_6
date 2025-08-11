@@ -34,7 +34,7 @@ export const ImageMassa = styled.img`
 export const TituloCard = styled.h1`
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 17px;
+    font-size: 16px;
     font-style: black;
     color: #FFEBD9;
     margin-top: -18px;
@@ -44,7 +44,7 @@ export const TituloCard = styled.h1`
 export const DescricaoCard = styled.p`
     font-family:' Roboto', sans-serif;
     font-size: 400;
-    font-size: 15px;
+    font-size: 14px;
     font-style: regular;
     color: #FFEBD9;
     text-align: left;

@@ -53,7 +53,7 @@ const Massas = () => (
       <Descricao>
         A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!
       </Descricao>
-      <Button type="link" to="/Teste" title="Saiba mais">Saiba Mais</Button>
+      <Button type="link" to="/Italiana" title="Saiba mais">Saiba Mais</Button>
     </Conteudo>
   </Card>
 )

@@ -14,6 +14,17 @@ export const Bannerimage = styled.div`
   position: relative;
 `;
 
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1; 
+`;
+
 export const BannerLogo = styled.img`
   width: 125px;
   height: 57.7px;
@@ -52,7 +63,7 @@ export const MassaTitulo = styled.h3`
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 32px;
-  color: #FFFFFF;
+  color: #ffffffff;
   line-height: 100%;
   letter-spacing: 0;
   margin-top: 25px;

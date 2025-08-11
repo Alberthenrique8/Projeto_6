@@ -1,4 +1,4 @@
-import { Bannerimage, BannerLogo, Cart, Massa, Massa2, MassaTitulo, Restaurant, } from "./styles";
+import { Bannerimage, BannerLogo, Cart, Massa, Massa2, MassaTitulo,  Restaurant, } from "./styles";
 import BannerFundo from "../../imagens/2page/Vector.png"
 import logo from "../../imagens/logo.png"
 import MassaImage from "../../imagens/2page/image.png"

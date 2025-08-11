@@ -8,7 +8,9 @@ import {
   TituloNota,
   ImageWrapper,
   TagContainer,
-  Tag
+  Tag,
+  GridContainer,
+
 } from './styles'
 
 import sushi from '../../imagens/sushi.png'
@@ -16,7 +18,9 @@ import massa from '../../imagens/massa.png'
 import Button from '../button'
 
 const Sushis = () => (
-  <Card>
+
+    <GridContainer>
+      <Card>
     <ImageWrapper>
       <Imagem src={sushi} alt="Sushi" />
       <TagContainer>
@@ -35,10 +39,14 @@ const Sushis = () => (
       <Button type="link" title="Saiba mais">Saiba Mais</Button>
     </Conteudo>
   </Card>
+  </GridContainer>
+
 )
 
 const Massas = () => (
-  <Card>
+
+    <GridContainer>
+    <Card>
     <ImageWrapper>
       <Imagem src={massa} alt="Massa" />
       <TagContainer>
@@ -53,9 +61,11 @@ const Massas = () => (
       <Descricao>
         A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!
       </Descricao>
-      <Button type="link" to="/Teste" title="Saiba mais">Saiba Mais</Button>
+      <Button type="link" to="/Italiana" title="Saiba mais">Saiba Mais</Button>
     </Conteudo>
   </Card>
+  </GridContainer>
+
 )
 
 export { Sushis, Massas }

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const FooterImage = styled.div `
-width: 100%;
+  width: 100%;
   height: 384px;
   background-repeat: no-repeat;
   background-size: cover;

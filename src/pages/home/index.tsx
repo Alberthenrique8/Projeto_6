@@ -1,6 +1,8 @@
 import FoodList from "../../components/FoodList"
 import Hero from "../../components/Hero"
 
+
+
 const Home = () => (
   <>
         <Hero />

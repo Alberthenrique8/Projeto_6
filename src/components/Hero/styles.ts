@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroImagem = styled.div`
-  width: 100%;
+  max-width:100%;
   height: 384px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,6 +13,7 @@ export const HeroImagem = styled.div`
   justify-content: center;
   text-align: center;
   position: relative;
+  margin-bottom: 80px;
 `
 export const Logo = styled.img`
   width: 125px;
@@ -22,12 +23,13 @@ export const Logo = styled.img`
 `
 export const Titulo = styled.h1`
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: 900px;
   font-size: 36px;
   color: #E66767;
   text-align: center;
   line-height: 1.2;
   margin: 200px 0 0;
   padding: 0 16px;
+  position: absolute;
 `
 

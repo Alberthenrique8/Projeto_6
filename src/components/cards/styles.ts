@@ -1,29 +1,30 @@
 import styled from "styled-components";
 
+export const GridContainer = styled.ul`
+  display: grid;
+  grid-template-columns:repeat(1,1fr) ;
+`
+
 export const Card = styled.li`
-  width: 100%;
-  max-width: 400px;
-  background-color: #fff;
-  border: 1px solid rgba(230, 103, 103, 1);
-  overflow: hidden;
-  font-family: 'Inter', Arial, sans-serif;
+  background-color: #ffffffff;
+  border-top: none;
+  border-radius: none;
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
-  margin-bottom: 120px;
-`
+  min-height: 180px;
+`;
 
 export const ImageWrapper = styled.div`
   position: relative;
-
+  border: none;
 `
 
 export const TagContainer = styled.div`
   position: absolute;
-  top: 8px;
+  top: 18px;
   right: 8px;
   display: flex;
-  gap: 4px;
+  gap: 8px;
 `
 
 export const Tag = styled.span`
@@ -31,7 +32,7 @@ export const Tag = styled.span`
   color: #fff;
   padding: 4px 6px;
   font-size: 12px;
-  border-radius: 4px;
+  border-radius: none;
 `
 export const Imagem = styled.img`
   width: 100%;
@@ -40,12 +41,19 @@ export const Imagem = styled.img`
 `
 
 export const Conteudo = styled.div`
-  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
   flex-grow: 1;
-`
+  gap: 8px;
+  margin-left: auto;
+  margin-top: -4px;
+  border: 1px solid #e66767;
+  border-top: none;
+  padding: 8px;
+  box-sizing: border-box; 
+  border-radius: 0px;
+`;
+
 
 export const TituloNota = styled.div`
   display: flex;
@@ -57,26 +65,27 @@ export const Titulo = styled.h3`
   font-weight: 700;
   font-size: 18px;
   color: #E66767;
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
 `
 
 export const Nota = styled.span`
   font-size: 14px;
   font-weight: bold;
   color: #E66767;
-
   &::after {
     content: '⭐';
     margin-left: 4px;
     color: gold;
-  }
+}
 `
 
 export const Descricao = styled.p`
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 14px;
   color: #E66767;
   line-height: 22px;
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: regular;
 `;
 

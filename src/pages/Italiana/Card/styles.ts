@@ -1,69 +1,65 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const GridContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 32px;
-    max-width: 1024px;
-    margin: 40px auto;
-    padding:0 20px ;
+export const MassaContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 32px;
+  max-width: 100%;
+  margin: 56px 185px;
+  justify-items: center;
+  list-style: none;
 `
+
 export const CardMassa = styled.li`
-    list-style: none;
-    background-color: #E66767;
-    border-radius: 0px;
-    width: 100%;
-    max-width: 320px;
-    min-height: 338px;
-    padding: 16px;
-    gap: 32px;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+  list-style: none;
+  width: 390px;
+  background-color: #E66767;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: none;
+  height: 100%;
+`
 
-    `
 export const ImageMassa = styled.img`
-    width: 100%;
-    max-width: 304px;
-    height: auto;
-    object-fit: contain;
-`
-export const TituloCard = styled.h1`
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 17px;
-    font-style: black;
-    color: #FFEBD9;
-    margin-top: -18px;
-    text-align: left;
-    width: 100%;
-`;
-export const DescricaoCard = styled.p`
-    font-family:' Roboto', sans-serif;
-    font-size: 400;
-    font-size: 15px;
-    font-style: regular;
-    color: #FFEBD9;
-    text-align: left;
-    width: 100%;
-    margin-top: -20px;
-`
-export const BotaoCard = styled.button`
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-style: bold;
-    max-width: 304px;
-    width: 100%;
-    height: 24px;
-    border-radius: 0%;
-    background-color: #FFEBD9;
-    color: #E66767;
-    margin-top: -18px;
-    border: none;
-    font-size: 14px;
-    cursor: pointer
+  width: 100%;
+  height: 230px;
+  border-radius: none;
+  padding: auto;
+  margin-bottom: 12px;
 `
 
+export const TituloCard = styled.h1`
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #ffebd9;
+  text-align: left;
+  margin-top: 5px;
+`
+
+export const DescricaoCard = styled.p`
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffebd9;
+  line-height: 1.5;
+  margin: 8px 0;
+`
+
+export const BotaoCard = styled.button`
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  width: 100%;
+  height: 32px;
+  background-color: #ffebd9;
+  color: #e66767;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: auto;
+`
